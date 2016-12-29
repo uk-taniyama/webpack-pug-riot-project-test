@@ -1,0 +1,15 @@
+app-tag
+  panel-tag
+    yield(to="header")
+      span HEADER
+    span CONTENT
+  script.
+    console.log("start app-tag.")
+
+panel-tag
+  div(class="header")
+    yield(from="header")
+  div(class="content")
+    yield
+  script.
+    console.log("start panel-tag.");

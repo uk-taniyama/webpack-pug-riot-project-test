@@ -1,0 +1,27 @@
+{
+  "name": "pug-test",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "npm-run-all": "^3.1.2",
+    "pug-html-loader": "^1.0.9",
+    "pug-plugin-no-yield": "^1.0.1",
+    "rimraf": "^2.5.4",
+    "riot": "^3.0.5",
+    "riotjs-loader": "^3.0.0",
+    "webpack": "^1.14.0"
+  },
+  "scripts": {
+    "clean": "rimraf publish",
+    "rebuild": "npm-run-all clean build",
+    "dev": "npm-run-all -p watch server",
+    "build": "webpack",
+    "watch": "webpack -w -d",
+    "server": "browser-sync start --config bs-config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "uk-taniyama",
+  "license": "ISC"
+}
