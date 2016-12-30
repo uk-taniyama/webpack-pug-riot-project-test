@@ -1,17 +1,18 @@
 {
-  "name": "pug-test",
+  "name": "webpack-pug-riot-project-test",
   "version": "1.0.0",
   "description": "",
   "devDependencies": {
     "browser-sync": "^2.18.5",
     "extract-text-webpack-plugin": "^1.0.1",
     "npm-run-all": "^3.1.2",
-    "pug-html-loader": "^1.0.9",
+    "pug-html-loader": "^1.0.10",
     "pug-plugin-no-yield": "^1.0.1",
     "rimraf": "^2.5.4",
     "riot": "^3.0.5",
     "riotjs-loader": "^3.0.0",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "webpack-stringify-loaders": "^1.0.2"
   },
   "scripts": {
     "clean": "rimraf publish",
@@ -23,5 +24,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "uk-taniyama",
-  "license": "ISC"
+  "license": "MIT"
 }
