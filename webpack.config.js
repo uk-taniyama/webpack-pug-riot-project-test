@@ -36,6 +36,11 @@ module.exports = {
       test: /\.tag\.pug$/,
       exclude: /node_modules/,
       loader: stringify([{
+        loader: 'babel', 
+        query:{
+          presets: ['es2015']
+        },
+      }, {
         loader: 'custom',
         query: {
           name: 'riot',

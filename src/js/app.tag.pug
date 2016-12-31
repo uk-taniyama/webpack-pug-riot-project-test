@@ -1,10 +1,14 @@
 app-tag
-  panel-tag
+  panel-tag(outer="{this}")
     yield(to="header")
       span HEADER
     span CONTENT
+    button(onclick="{opts.outer.onclick}") BUTTON
   script.
     console.log("start app-tag.")
+    onclick = (e) => {
+      console.log("ONCLICK");
+    }
 
 panel-tag
   div(class="header")
@@ -13,3 +17,4 @@ panel-tag
     yield
   script.
     console.log("start panel-tag.");
+    this.opts = opts;
